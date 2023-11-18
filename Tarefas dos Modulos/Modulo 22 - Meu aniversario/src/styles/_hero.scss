@@ -1,0 +1,175 @@
+@use "./colors";
+
+.hero {
+  padding: 0px 20px 20px;
+  width: 100%;
+  background-color: colors.$black;
+  background-image: linear-gradient(
+    colors.$black,
+    colors.$black,
+    colors.$laranja1
+  );
+
+  .img__box__responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .img__box__responsive__height img {
+    height: 100%;
+  }
+
+  .img__box__responsive img {
+    position: absolute;
+  }
+
+  .img__box__center img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box__img__1 {
+    height: 300px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos {
+    background-color: colors.$silver;
+    border-radius: 10px;
+    padding: 10px;
+    &__title {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    &__info {
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        gap: 5px;
+
+        h2 {
+          font-size: 2rem;
+          font-weight: normal;
+        }
+
+        b {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__button {
+      font-size: 2rem;
+      background-color: colors.$black;
+      padding: 5px;
+      color: silver;
+      border-radius: 5px;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: colors.$hover;
+      }
+    }
+  }
+
+  .container-contador {
+    margin-top: 40px;
+    h2 {
+      color: black;
+      font-size: 3.5rem;
+
+      #contador {
+        font-size: 3.5rem;
+        font-family: sans-serif;
+
+        &:hover {
+          color: colors.$hover;
+          cursor: pointer;
+        }
+      }
+
+      .icon {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    .infos {
+      display: block;
+
+      &__title {
+        font-size: 3rem;
+      }
+
+      &__info__item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        b {
+          font-size: 1.4rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .infos__button {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .container-contador {
+      max-width: 90%;
+      text-align: center;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container-contador {
+      h2 {
+        font-size: 2.5rem;
+        display: block;
+
+        .icon {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .box__img__1 {
+      height: 200px;
+    }
+  }
+}

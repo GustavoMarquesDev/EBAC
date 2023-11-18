@@ -1,0 +1,176 @@
+.titles {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  color: #087f5b;
+}
+
+header {
+  background-color: #087f5b;
+}
+
+header h1 {
+  font-size: 10rem;
+}
+
+#verde {
+  color: #63e6be;
+}
+
+#branco {
+  color: #e9ecef;
+}
+
+#vermelho {
+  color: red;
+}
+
+#menu-navegacao a {
+  color: #fff;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #fff;
+  color: red;
+}
+
+.carousel-btn {
+  opacity: 1;
+  width: 4rem;
+  display: block;
+  padding: 1rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: #000;
+  background-color: red;
+}
+
+.carousel-img {
+  position: relative;
+  height: 40rem;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-img img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#carousel {
+  margin: 0 auto;
+}
+
+#sobre-a-loja {
+  background-color: #087f5b;
+}
+
+#sobre-a-loja p {
+  color: #fff;
+}
+
+#ultimos-lancamentos {
+  background-color: #087f5b;
+}
+
+#lancamento p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#lancamento img {
+  border: 1px solid #c3fae8;
+  padding: 50px;
+}
+
+#promocoes {
+  background-color: #087f5b;
+}
+
+.nav-promocoes.nav-pills .nav-link.active {
+  background-color: #fff;
+  color: #087f5b;
+}
+
+.nav-promocoes.nav-pills .nav-link {
+  color: #fff;
+}
+
+.color-h5 {
+  color: #fff;
+  font-family: "Libre Baskerville", serif;
+}
+
+.color-text {
+  color: #fff;
+}
+
+.tenis-img {
+  border-radius: 10%;
+}
+
+#fale-conosco {
+  background-color: #087f5b;
+}
+
+#fale-conosco label {
+  color: #fff;
+}
+
+#fale-conosco form button {
+  color: #087f5b;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  border-bottom: 4px solid #c3fae8;
+}
+
+#fale-conosco form button:hover {
+  transition: all 0.2s ease;
+  background-color: red;
+  color: #fff;
+  transform: translate(0px, -2px);
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+  color: #fff;
+}
+
+#midia-social h3 {
+  color: #fff;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.adress h3,
+p {
+  color: #fff;
+}
+
+.error {
+  background-color: red;
+  margin-top: 3px;
+  border-radius: 7px;
+}
+
+@media (max-width: 1202px) {
+  .carousel-img img {
+    width: 100%;
+  }
+
+  #menu-navegacao ul li a {
+    padding: 2px;
+    margin: 3px 3px;
+  }
+
+  .carousel-img {
+    height: 15rem;
+  }
+}

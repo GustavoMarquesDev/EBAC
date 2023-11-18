@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(47, 46, 46);
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+form {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border: 20px 0;
+}
+
+form li {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+li label {
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+li input {
+  padding: 7px 10px;
+  margin: 0;
+  display: inline-block;
+  width: 555%;
+}
+
+.form-icon {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.buttons-box {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+
+.btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.btn-enviar {
+  background-color: #40c057;
+}
+
+.btn-enviar:hover {
+  background-color: #2b8a3e;
+}
+
+.btn-reset {
+  background-color: #fa5252;
+}
+.btn-reset:hover {
+  background-color: #c92a2a;
+}

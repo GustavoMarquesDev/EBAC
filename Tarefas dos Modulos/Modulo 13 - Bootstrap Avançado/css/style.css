@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container-header {
+  background-color: #2b8a3e;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.container-header a {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0d4117;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+h2 {
+  padding: 2rem;
+  color: #fff;
+}
+
+#noticias,
+#conquistas {
+  margin: 10rem 0;
+  background-color: #2b8a3e;
+}
+
+.card img {
+  width: 423px;
+  height: 238px;
+}
+
+.card-header {
+  font-size: 2.1rem;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card-body a {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: #0d4117;
+  border-color: #0d4117;
+}
+.btn-primary:hover {
+  background-color: #2b8a3e;
+  border: 1px solid #2b8a3e;
+}
+
+.row {
+  margin-bottom: 10rem;
+}
+
+.img-box {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.img-box-carousel {
+  position: relative;
+  height: 75rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box-carousel img {
+  position: relative;
+  height: 100%;
+  top: 0;
+}
+
+.carrousel-btn {
+  opacity: 1;
+  width: 4rem;
+  display: block;
+  padding: 1rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: #000;
+  background-color: #2b8a3e;
+}
+
+#carousel-exemplo {
+  margin: 0 auto;
+  max-width: 110rem;
+}

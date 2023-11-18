@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-header">
+      <header id="cabecalho ">
+        <div class="navbar navbar-expand-lg">
+          <div class="container">
+            <h1>Palmeiras Website</h1>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="nav navbar-nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#carousel-exemplo">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#trofeus">Nossas conquistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#news">Ultimas noticías</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- *******************Carousel de imagens******************* -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <div class="container">
+        <div
+          id="carousel-exemplo"
+          class="carousel carousel-fade slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <div class="img-box-carousel">
+                <img
+                  src="https://imagens.ebc.com.br/88wlkom0AfxGHttatIHNcF41MwE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2022-11-10t031109z_237920102_hp1eiba08ue1a_rtrmadp_3_soccer-brazil-pal-amm-report.jpg?itok=SEoqvgfH"
+                />
+              </div>
+
+              <div class="carousel-caption">
+                <h2>Palmeiras campeão brasileiro 2022</h2>
+              </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <div class="img-box-carousel">
+                <img
+                  src="https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2021/11/palmeiras-campeao.jpeg"
+                />
+              </div>
+
+              <div class="carousel-caption">
+                <h2>Palmeiras campeão da Libertadores 2020</h2>
+              </div>
+            </div>
+
+            <div data-bs-interval="3000" class="carousel-item">
+              <div class="img-box-carousel">
+                <img
+                  src="https://www.verdazzo.com.br/wp-content/uploads/2020/11/20210307_trofeu.jpg"
+                />
+              </div>
+
+              <div class="carousel-caption">
+                <h2>Palmeiras campeão da Copa do Brasil 2020</h2>
+              </div>
+            </div>
+          </div>
+          <button
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon carrousel-btn"></span>
+          </button>
+          <button
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon carrousel-btn"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-exemplo"
+              class="active"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- *******************secão nossas conquistas******************* -->
+
+      <div class="conquistas-title">
+        <h2 id="conquistas" class="d-flex justify-content-center">
+          Nossas Conquistas
+        </h2>
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container-section">
+          <div id="trofeus" class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">Copa do Brasil</header>
+                  <div class="img-box">
+                    <img
+                      src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2021/03/07222049/07032021_cg_festacampo_3597_31.jpg"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h4 class="card-title">Copa do Brasil 2020</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">Campeonato Brasileiro</header>
+                  <div class="img-box">
+                    <img
+                      src="https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2022/11/palmeiras.jpg"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h4 class="card-title">Brasileirão 2022</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">Libertadores</header>
+                  <div class="img-box">
+                    <img
+                      src="https://bahianoar.com/wp-content/uploads/2021/01/bahianoar-palmeiras-e-campeao-da-libertadores-2020-91.jpg"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Libertadores 2020</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="noticias-title">
+          <h2 id="noticias" class="d-flex justify-content-center">
+            Ultimas noticias
+          </h2>
+        </div>
+        <!-- *******************secão Ultimas noticias******************* -->
+        <div class="container-section">
+          <div id="news" class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">
+                    Ultimas coletivas de imprensa
+                  </header>
+                  <div class="img-box">
+                    <img
+                      src="https://jpimg.com.br/uploads/2023/04/abel-750x410.png"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Coletiva de imprensa pós jogo Palmeiras x Corinthians
+                    </h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">
+                    Reforços da janela de transferência
+                  </header>
+                  <div class="img-box">
+                    <img
+                      src="https://pbs.twimg.com/media/EQl5BFvXsAAZzEc.jpg"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Veja os possivéis reforços para o restante da temporada
+                    </h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card">
+                  <header class="card-header">
+                    Próximo jogo <strong>Palmeiras x Santos</strong>
+                  </header>
+                  <div class="img-box">
+                    <img
+                      src="https://media.jornaldooeste.com.br/2023/06/e33477ea-29062023_cg_palmeiras_destaque_8071_13.jpg"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Veja a provável escalação para o próximo jogo já pensando
+                      em libertadores
+                    </h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam, temporibus quas ducimus odit aliquid sit! A tenetur
+                      odio dolor deserunt corrupti delectus modi non accusamus,
+                      earum quae officia laboriosam et?
+                    </p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 20:00</time>
+                  </footer>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./Lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

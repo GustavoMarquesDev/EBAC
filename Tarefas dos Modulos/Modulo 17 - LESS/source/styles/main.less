@@ -1,0 +1,51 @@
+@import "./reset.less";
+@import "./header.less";
+@import "./sections.less";
+@breakpointTablet: ~"(max-width: 1023px)";
+@breakpointMobile: ~"(max-width: 767px)";
+
+@import "./maps.less";
+
+body {
+  background-color: #colors[body];
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @breakpointTablet {
+    .branding {
+      padding: 0 10px;
+    }
+
+    nav {
+      padding: 0 10px;
+    }
+
+    .container {
+      max-width: 80%;
+    }
+
+    .products {
+      grid-template-columns: repeat(2, 48.5%);
+      column-gap: 3%;
+      padding: 0 1rem;
+    }
+  }
+
+  @media @breakpointMobile {
+    .products {
+      display: block;
+    }
+
+    .product-item {
+      margin-bottom: 32px;
+    }
+  }
+}

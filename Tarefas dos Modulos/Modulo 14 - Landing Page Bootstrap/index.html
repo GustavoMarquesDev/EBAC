@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palmeiras Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./Lib/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+      <div class="container">
+        <h1 class="navbar-brand m-0 titles fs-2">
+          <span id="verde">Palmeiras </span><span id="branco">Shop </span
+          ><span id="vermelho">Oficial</span>
+        </h1>
+
+        <!-- ************ MENU HAMBURGUER **************** -->
+
+        <button
+          class="navbar-toggler mb-5"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- *********************************************** -->
+
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#sobre-a-loja" class="nav-link active">
+                <i class="bi bi-house-door me-1"></i>
+                Conheça nossa loja</a
+              >
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#ultimos-lancamentos" class="nav-link">
+                <i class="bi bi-cart-check-fill"></i>
+                Últimos lançamentos
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#promocoes" class="nav-link">
+                <i class="bi bi-cash-coin"></i>
+                Promoções</a
+              >
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#fale-conosco" class="nav-link">
+                <i class="bi bi-chat-left-text me-1"></i>
+                Fale conosco</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--  ******************* CAROUSEL MOSTRANDO A LOJA *********************  -->
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <div id="carousel-conteudo">
+        <section id="sobre-a-loja">
+          <div
+            class="carousel slide"
+            id="carousel"
+            data-bs-ride="carousel"
+            id="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="carousel-img">
+                  <img
+                    src="./imgs/Interior da loja 2.jpg"
+                    alt="Foto do espaço interno da loja"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-img">
+                  <img
+                    src="./imgs/Interior da loja.jpg"
+                    alt="Foto do espaço interno da loja"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-img">
+                  <img
+                    src="./imgs/Parte de fora da loja.jpg"
+                    alt="Foto do espaço externo da loja"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- *************** PARA CRIAS OS BOTOES DE NEXT E PREV ****************-->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon carousel-btn"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon carousel-btn"></span>
+            </button>
+
+            <!-- **************************************************************-->
+
+            <!-- *************** PARA CRIAS OS INDICADORES DE SLIDE ****************-->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                class="active"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <!-- ***********************************************************-->
+          </div>
+          <div class="pt-5 pb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <img
+                    src="./imgs/sobre a loja.webp"
+                    class="d-block w-100 rounded"
+                    alt="Foto do interior da loja"
+                  />
+                </div>
+                <div class="col-md-5 mt-3 mt-md-0">
+                  <h2 class="titles">Sobre a nossa loja</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                    similique culpa facere amet maiores dolorem vitae! Quos
+                    libero doloribus, delectus ducimus modi impedit voluptatem
+                    earum quasi, reiciendis asperiores nihil exercitationem.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dignissimos necessitatibus a culpa, voluptas suscipit,
+                    cupiditate facilis molestias eum nesciunt magnam fuga odit
+                    ab! Esse possimus earum id eligendi, totam sint. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Adipisci
+                    possimus tenetur numquam ex excepturi optio asperiores,
+                    dicta ipsam. Aliquid et repellendus aperiam saepe repellat
+                    quibusdam eum voluptatibus odio facilis ipsum. Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. Rerum maxime
+                    atque, ipsa esse aliquid illo repellat sed harum
+                    consequuntur adipisci in officiis impedit, porro nesciunt
+                    blanditiis! Doloribus numquam cumque ab. Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Porro repellendus
+                    laudantium culpa corporis rem similique ab aliquam dicta
+                    quisquam veniam blanditiis quaerat delectus doloribus
+                    repellat, architecto libero nesciunt aut? Nobis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ******************* SEÇÃO ULTIMOS LANÇAMENTOS *********************** -->
+
+        <section id="ultimos-lancamentos" class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="titles text-center fs-1">
+                <span id="verde">Últim</span><span id="branco">os lançam</span
+                ><span id="vermelho">entos</span>
+              </h2>
+            </div>
+            <div class="row mt-2" id="lancamento">
+              <div class="col-md-4 new-item">
+                <img
+                  src="./imgs/camisa 2.png"
+                  class="d-block w-100 rounded mb-2"
+                  alt=""
+                />
+                <p class="text-center">
+                  Camisa modelo 2023 disponivel nos tamanhos: <br />
+                  (P) (M) (G) e (GG)
+                </p>
+              </div>
+              <div class="col-md-4 new-item">
+                <img
+                  src="./imgs/camisa 2.png"
+                  class="d-block w-100 rounded mb-2"
+                  alt=""
+                />
+                <p class="text-center">
+                  Camisa modelo 2 2023 disponivel nos tamanhos: <br />
+                  (P) (M) (G) e (GG)
+                </p>
+              </div>
+              <div class="col-md-4 new-item">
+                <img
+                  src="./imgs/camisa 2.png"
+                  class="d-block w-100 rounded mb-2"
+                  alt=""
+                />
+                <p class="text-center">
+                  Camisa modelo 2 2023 disponivel nos tamanhos: <br />
+                  (P) (M) (G) e (GG)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ******************************************************** -->
+
+        <!-- ******************* SEÇÃO PROMOÇÕES *********************** -->
+        <section id="promocoes" class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="titles text-center fs-1 mb-5">
+                <i class="bi bi-basket"></i>
+                <span id="verde">Pro</span><span id="branco">mo</span
+                ><span id="vermelho">ções</span>
+              </h2>
+            </div>
+
+            <!-- ******************* ASIDE *********************** -->
+            <div class="row">
+              <aside class="col-md-2">
+                <nav class="nav nav-pills flex-collumn nav-promocoes">
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#camisas"
+                    class="fw-bold text-start nav-link titles active"
+                  >
+                    Camisas esportivas
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tenis"
+                    class="fw-bold text-start nav-link titles"
+                  >
+                    Tênis para caminhada
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#moletons"
+                    class="fw-bold text-start nav-link titles"
+                  >
+                    Moletons
+                  </button>
+                </nav>
+              </aside>
+              <div class="col-md-10">
+                <div class="tab-content">
+                  <!-- ************** CAMISAS ESPORTIVAS *************-->
+                  <div class="tab-pane active" id="camisas">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/camisa modelo.png"
+                          alt="camisa palmeiras"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Camisa modelo 2022
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/camisa modelo.png"
+                          alt="camisa palmeiras"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Camisa modelo 2022
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/camisa modelo.png"
+                          alt="camisa palmeiras"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Camisa modelo 2022
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/camisa modelo.png"
+                          alt="camisa palmeiras"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Camisa modelo 2022
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ************** TENIS CAMINHADA *************-->
+
+                  <div class="tab-pane" id="tenis">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100 tenis-img"
+                          src="./imgs/tenis.jpeg"
+                          alt="tenis "
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Tênis Nike
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100 tenis-img"
+                          src="./imgs/tenis.jpeg"
+                          alt="tenis "
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Tênis Nike
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100 tenis-img"
+                          src="./imgs/tenis.jpeg"
+                          alt="tenis "
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Tênis Nike
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- *************** MOLETONS *******************-->
+
+                  <div class="tab-pane" id="moletons">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/moleton.png"
+                          alt="moletom"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Moletom Palmeiras
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/moleton.png"
+                          alt="moletom"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Moletom Palmeiras
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/moleton.png"
+                          alt="moletom"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Moletom Palmeiras
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/moleton.png"
+                          alt="moletom"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Moletom Palmeiras
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <img
+                          class="d-block w-100"
+                          src="./imgs/moleton.png"
+                          alt="moletom"
+                        />
+                        <h5 class="text-center fw-bold mt-2 color-h5">
+                          Moletom Palmeiras
+                        </h5>
+                        <p class="color-text text-center">
+                          Lorem ipisicing elit. In, esse. A, atque ducimus iusto
+                          quis
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ********************* FALE CONOSCO *******************  -->
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="text-center titles">
+                <span id="verde">Fale</span><span id="branco"> con</span
+                ><span id="vermelho">sco</span>
+              </h2>
+            </div>
+            <div class="row">
+              <div class="col-md-7 mb-5">
+                <form>
+                  <div class="mb-3">
+                    <label for="nome" class="form-label fw-bold text-colored"
+                      >Seu nome</label
+                    >
+                    <input
+                      type="text"
+                      id="nome"
+                      class="form-control"
+                      required
+                      name="nomeCompleto"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold text-colored"
+                      >Seu e-mail</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      required
+                      name="email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="telefone"
+                      class="form-label fw-bold text-colored"
+                      >Seu telefone (opcional)</label
+                    >
+                    <input type="tel" id="telefone" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="mensagem"
+                      class="form-label fw-bold text-colored"
+                      >Sua mensagem</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="mensagem"
+                      required
+                      name="textarea"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn fw-bold">Enviar</button>
+                </form>
+              </div>
+              <div class="col-md-5">
+                <div class="row" id="midia-social">
+                  <h3 class="section-title fs-4">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    Redes sociais
+                  </h3>
+                  <ul class="social-links">
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-facebook text-colored"></i>
+                      </a>
+                    </li>
+                    <li class="fs-5 ms-1 me-1">
+                      <a href="#">
+                        <i class="bi bi-instagram text-colored"></i>
+                      </a>
+                    </li>
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-whatsapp text-colored"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row mt-4 adress">
+                  <h3 class="section-title fs-4 text-colored">
+                    <i class="bi bi-cursor-fill"></i>
+                    Endereço
+                  </h3>
+                  <p>Rua Bootstrap, Bairro HTML - Javascript -SP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./Lib/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

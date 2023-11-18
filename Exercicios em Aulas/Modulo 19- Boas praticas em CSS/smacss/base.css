@@ -1,0 +1,13 @@
+@import "./layout.css";
+@import "./module.css";
+@import "./tema-b.css";
+@import "./tema-a.css";
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

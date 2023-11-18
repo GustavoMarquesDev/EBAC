@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+header h1 {
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form input,
+button {
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+form button {
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+form button:hover {
+  background-color: darkred;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+ul li {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.feito {
+  text-decoration: line-through;
+}

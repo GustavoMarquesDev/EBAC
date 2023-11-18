@@ -1,0 +1,258 @@
+/****************
+  Padrão
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* Para o scroll descer bem devagar quando clicado em um link */
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1; /* Para dar espaçamento na linha na vertical*/
+  font-weight: 400;
+  color: #000;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+h2 {
+  color: #862e9c;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #862e9c;
+  position: absolute;
+  top: 35px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 22px 0;
+}
+
+.main-container {
+  padding: 36px 40px;
+  max-width: 1104px;
+  margin: 0 auto;
+}
+
+/****************
+    Header
+*/
+
+header {
+  background-color: #862e9c;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  max-width: 1104px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.input-search {
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.button-search {
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #6c317b;
+  border: 1px solid #fff;
+}
+
+.hambuguer-menu {
+  display: none;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+/****************
+    Info-box
+*/
+
+.info-box-section {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-box-market {
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-box-market img {
+  position: absolute;
+  height: 100%;
+}
+
+/****************
+    Products-box
+*/
+
+.products-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+  border: 1px solid #862e9c;
+}
+
+.product-box p {
+  height: 50px;
+  overflow-y: scroll;
+}
+
+.product-box-img {
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-product {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.btn-add {
+  background-color: #862e9c;
+  color: #fff;
+  border: none;
+  height: 30px;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*****
+
+Sub-menu*/
+
+.sub-menu {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.sub-menu input {
+  margin-right: 2px;
+  max-width: 170px;
+}
+
+#sub-links a {
+  display: inline-block;
+  color: #6c317b;
+  font-size: 1rem;
+}
+
+/****************
+    Media query
+*/
+
+@media (max-width: 1023px) {
+  .info-box-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-box {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .products-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .hambuguer-menu {
+    display: block;
+  }
+
+  .sub-menu {
+    width: 70%;
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .products-box {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .btn-add {
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 2px;
+  }
+
+  .sub-menu a {
+    margin-bottom: 10px;
+  }
+}

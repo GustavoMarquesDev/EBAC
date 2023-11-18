@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  color: rgb(0, 7, 2);
+}
+
+section h2,
+section h3 {
+  color: rgb(2, 29, 11);
+}
+
+section {
+  padding: 0 !important;
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+.container {
+  background-color: #7bcc7b;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.articles article img {
+  /*height: 180px;*/
+  width: 100%;
+  width: 300px;
+}
+
+.articles article {
+  width: 30%;
+}
+
+section {
+  padding: 16px 0;
+}
+
+footer {
+  padding: 45px 0 55px 0;
+  box-sizing: border-box;
+}
+
+section h2,
+.articles article {
+  margin-bottom: 16px;
+}
+
+.articles article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.articles article h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+section h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.social-links img {
+  height: 24px;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+
+#contact .container {
+  display: block;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contato h2 {
+  font-size: 25px;
+  text-align: left;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+#history img {
+  margin-bottom: 25px;
+}
+
+#about img {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+
+header nav li a:hover {
+  /*hover é um pseudo seletor*/
+  color: #ce240ee5; /*mudar cor do botão ao colocar o mouse em cima*/
+}
+
+section p {
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.escudos-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-text {
+  line-height: 1.6;
+}
+
+.text-shield {
+  text-align: center;
+  padding: 10px 170px 65px 170px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.box-history {
+  display: flex;
+  gap: 20px;
+  padding: 20px 160px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-history {
+  font-size: 18px;
+  width: 400px;
+}
+
+.text-history2 {
+  font-size: 18px;
+}
+
+.img-box-trofeu {
+  justify-content: center;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.trofeu-cdb {
+  height: 100%;
+}
+
+.trofeu-content {
+  padding: 25px 25px;
+}
+
+.trofeu-card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.096) 0px 20px 20px;
+  padding: 20px 0;
+  background-color: #37aa14;
+}
+
+.button {
+  transition: all 0.4s;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  color: black;
+}
+
+.contact-methods {
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+}
+
+.copy-text {
+  margin-left: 50px;
+}
+
+form button {
+  background-color: #010f03;
+  color: #04ff04;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  /*hover é um pseudo seletor*/
+  background-color: #13e251;
+  color: #010f03; /*mudar cor do botão ao colocar o mouse em cima*/
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #17a12e; /*para mudar a cor quando o cursor estiver em cima do sua mensagem*/
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

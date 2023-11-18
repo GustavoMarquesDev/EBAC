@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.col h2 {
+  margin-top: 15px;
+}
+
+.label-box {
+  margin-top: 26px;
+}
+
+.error {
+  color: red;
+}
