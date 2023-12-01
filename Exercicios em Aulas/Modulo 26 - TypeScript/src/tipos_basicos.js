@@ -7,4 +7,15 @@ const nacionalidade = "Brasileira";
 const colegas = ["Gustavo", "Pedro", "Paulo"];
 const tecnoclogias = ["html", "css", "js"];
 const notas = [7, 8, 5, 2];
-notas.forEach((number) => console.log(number));
+const lista = [
+    "Gustavo",
+    true,
+    25,
+];
+let idadeDaAna = 25;
+idadeDaAna = "25 anos";
+let dadosDaApi;
+dadosDaApi = 10;
+dadosDaApi = true;
+dadosDaApi = [1, 2, 3];
+dadosDaApi = "String";
