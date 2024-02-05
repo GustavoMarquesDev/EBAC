@@ -2,7 +2,7 @@ import { Subtitulo } from './styles'
 
 export type Props = {
   fontSize: number
-  children: string
+  children: any
   color: string
 }
 

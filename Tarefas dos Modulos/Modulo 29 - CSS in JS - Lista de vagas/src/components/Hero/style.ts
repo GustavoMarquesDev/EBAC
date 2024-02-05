@@ -9,7 +9,7 @@ export const Formulario = styled.form`
   display: flex;
   align-items: center;
 
-  ::before {
+  /* ::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ export const Formulario = styled.form`
     background-color: var(--cor-principal);
     content: '';
     opacity: 0.7;
-  }
+  } */
 
   @media (max-width: 768px) {
     height: auto;
